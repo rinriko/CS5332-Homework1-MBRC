@@ -11,13 +11,13 @@ Note:
 ----------------------------------------------------
 ## <a name="mbrc"></a> Message Buffer and Response Connector (MBRC)
 
-    This is a multi-threaded program for communicating messages between a sender object thread and a receiver object thread using a "message buffer and response connector (MBRC)" object in an object-oriented language (Java, C++, or C#).
+This is a multi-threaded program for communicating messages between a sender object thread and a receiver object thread using a "message buffer and response connector (MBRC)" object in an object-oriented language (Java, C++, or C#).
 
-    The figure below depicts the MBRC class, followed by the detailed specifications of operations. The MBRC class provides the send(), receive(), and reply() operations and has a message buffer and a response buffer where each buffer can hold only one message. 
+The figure below depicts the MBRC class, followed by the detailed specifications of operations. The MBRC class provides the send(), receive(), and reply() operations and has a message buffer and a response buffer where each buffer can hold only one message. 
 
-    There are two separate objects, a sender object, and a receiver object, each having its thread in multi-threaded programming and communicate with each other. They are concurrently running to communicate messages synchronously. The sender object can send the next message to the receiver object only after receiving the response of the previous message from the receiver object. 
+There are two separate objects, a sender object, and a receiver object, each having its thread in multi-threaded programming and communicate with each other. They are concurrently running to communicate messages synchronously. The sender object can send the next message to the receiver object only after receiving the response of the previous message from the receiver object. 
 
-    Also, the message Content of each message from a sender object to a receiver object requires a digital signature (non-repudiation security service). In contrast, each response from the receiver object to the sender object requires a message digest (integrity security service).
+Also, the message Content of each message from a sender object to a receiver object requires a digital signature (non-repudiation security service). In contrast, each response from the receiver object to the sender object requires a message digest (integrity security service).
 
 ![alt text](https://github.com/rinriko/CS5332-Homework1-MBRC/blob/main/image/image1.JPG?raw=true)
 
